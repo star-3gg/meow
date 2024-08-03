@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"b68651abdc6452f8","type":"text","text":"Self-hosting","x":-349,"y":-460,"width":250,"height":60},
+		{"id":"a4478d22678139e8","type":"text","text":"Toolchain","x":-20,"y":-460,"width":250,"height":60},
+		{"id":"b5a0225e94f5058e","type":"text","text":"MEOW","x":-204,"y":-644,"width":250,"height":60,"color":"6"},
+		{"id":"39f3b02942fdec59","type":"text","text":"LLVM","x":-20,"y":-860,"width":250,"height":60},
+		{"id":"8cba52c1d07076d2","x":-399,"y":-252,"width":250,"height":60,"type":"text","text":"Bootstrapping Paradox"},
+		{"id":"afad905c22ebad9d","x":-374,"y":-860,"width":250,"height":60,"type":"text","text":"Lexer"},
+		{"id":"4f4e578af9c47cd3","x":-374,"y":-1057,"width":250,"height":60,"type":"text","text":"AST"},
+		{"id":"b0c9f2a5fd170a85","x":-20,"y":-1057,"width":250,"height":60,"type":"text","text":"IR"}
+	],
+	"edges":[
+		{"id":"25ded9345038e30a","fromNode":"b5a0225e94f5058e","fromSide":"bottom","toNode":"b68651abdc6452f8","toSide":"top"},
+		{"id":"abddea4ee2ed8e7f","fromNode":"b5a0225e94f5058e","fromSide":"bottom","toNode":"a4478d22678139e8","toSide":"top"},
+		{"id":"e6f407bb352e40f9","fromNode":"b5a0225e94f5058e","fromSide":"top","toNode":"39f3b02942fdec59","toSide":"bottom"},
+		{"id":"36681fa817d6d3d5","fromNode":"b68651abdc6452f8","fromSide":"bottom","toNode":"8cba52c1d07076d2","toSide":"top"},
+		{"id":"3c4c0ac7cd3e95b5","fromNode":"b5a0225e94f5058e","fromSide":"top","toNode":"afad905c22ebad9d","toSide":"bottom"},
+		{"id":"cb79214285a832cb","fromNode":"b5a0225e94f5058e","fromSide":"top","toNode":"4f4e578af9c47cd3","toSide":"bottom"},
+		{"id":"a433187e1a812a20","fromNode":"b5a0225e94f5058e","fromSide":"top","toNode":"b0c9f2a5fd170a85","toSide":"bottom"}
+	]
+}
