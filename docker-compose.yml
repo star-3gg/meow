@@ -1,0 +1,18 @@
+services:
+  meow_build:
+    build:
+      context: /dockerfiles/
+      dockerfile: meow-build.Dockerfile
+    container_name: "meow-build"
+    environment:
+      DEBUGINFOD_URLS: "https://debuginfod.archlinux.org" # Fixes valgrind error
+    volumes:
+      - .:/app
+      - /app/build
+    working_dir: /app
+    command: ./setup.sh
+    stop_grace_period: 10ms
+    # INFO: Enable interactive terminal. It works,
+    # just start typing and it will be received by the application
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
